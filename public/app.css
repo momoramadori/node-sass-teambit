@@ -446,9 +446,13 @@ nav .menu {
 }
 
 nav li {
-  padding: 0 10px;
+  padding: 15px 25px;
   font-size: 12px;
   font-weight: bold;
+}
+
+nav li a:hover {
+  color: #58402c;
 }
 
 nav li:last-of-type {
@@ -500,6 +504,11 @@ nav li button:hover i {
 
 #jumbotron .container .jumbo small {
   padding: 0 5px;
+}
+
+#jumbotron .container .jumbo small i {
+  cursor: pointer;
+  line-height: 15px;
 }
 
 #jumbotron .container img {
