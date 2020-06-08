@@ -170,7 +170,6 @@ img {
  * 2. Remove the margin in Firefox and Safari.
  */
 
-button,
 input,
 optgroup,
 select,
@@ -397,23 +396,35 @@ li {
 
 a {
   text-decoration: none;
-  color: #58402c;
 }
 
 a:hover {
   text-decoration: none;
-  color: #30488f;
-}
-
-a:hover i {
-  color: #30488f;
+  color: white;
 }
 
 button {
   border-radius: 8px;
+  color: white;
   padding: 10px;
   font-weight: bold;
+  margin-bottom: 20px;
+  border-width: 1px;
+  background-color: #30488f;
 }
+
+button a,
+button i {
+  color: white;
+}
+
+p.imp {
+  font-size: 1.35rem;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+/* ----- HEADER ----- */
 
 nav {
   display: flex;
@@ -445,8 +456,13 @@ nav li:last-of-type {
 }
 
 nav li button {
-  transition: all 0.2s;
-  border-width: 1px;
+  transition: background-color 0.2s;
+  background-color: white;
+  color: #58402c;
+}
+
+nav li button i {
+  color: #58402c;
 }
 
 nav li button:hover {
@@ -456,5 +472,39 @@ nav li button:hover {
 
 nav li button:hover i {
   color: white;
+}
+
+/* ----- JUMBOTRON ----- */
+
+#jumbotron {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#jumbotron .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#jumbotron .container .jumbo {
+  width: 50%;
+}
+
+#jumbotron .container .jumbo h1 {
+  margin-top: 0;
+  font-size: 46px;
+  line-height: 70px;
+  margin-bottom: 40px;
+}
+
+#jumbotron .container .jumbo small {
+  padding: 0 5px;
+}
+
+#jumbotron .container img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 

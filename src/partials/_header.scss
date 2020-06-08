@@ -1,3 +1,5 @@
+/* ----- HEADER ----- */
+
 nav {
     @include my-flex(space-between, center);
     height: 75px;
@@ -22,14 +24,17 @@ nav {
         }
         
         button {
-            transition: all 0.2s;
-            border-width: 1px;
+            transition: background-color 0.2s;
+            background-color: white;
+            color: $colore_testo;
+            i {
+                color: $colore_testo;
+            }
             &:hover {
                 background-color: $button_bg;
-                color: white;
-
+                color: $button_color;
                 i {
-                    color: white;
+                    color: $button_color;
                 }
             }
         }

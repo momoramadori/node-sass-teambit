@@ -15,18 +15,28 @@ ul, li {
 
 a {
     text-decoration: none;
-    color: $colore_testo;
     &:hover {
         text-decoration: none;
-        color: #30488f;
-        i {
-            color: #30488f;
-        }
+        color: $button_color;
     }
 }
 
 button {
     @include my-radius(8px);
+    color: $button_color;
     padding: 10px;
     font-weight: bold;
+    margin-bottom: $button_margin;
+    border-width: $border_width_button;
+    background-color: $button_bg;
+
+    a, i {
+        color: $button_color;
+    }
+}
+
+p.imp {
+    font-size: $important_paragraphs;
+    line-height: 30px;
+    margin-bottom: $standard_margin;
 }

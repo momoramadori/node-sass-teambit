@@ -1,0 +1,29 @@
+/* ----- JUMBOTRON ----- */
+
+#jumbotron {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    .container {
+        @include my-flex(center,flex-start);
+
+        .jumbo {
+            width: 50%;
+
+            h1 {
+                margin-top: 0;
+                font-size: $main_title;
+                line-height: 70px;
+                margin-bottom: $standard-margin;
+            }
+
+            small {
+                padding: 0 5px;
+            }
+        }
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
