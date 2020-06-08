@@ -7,3 +7,8 @@
 @mixin my-radius($radius) {
     border-radius: $radius;
 }
+
+@mixin titles_margin($start, $end) {
+    margin-block-start: $start;
+    margin-block-end: $end;
+}

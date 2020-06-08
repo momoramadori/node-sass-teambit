@@ -517,3 +517,26 @@ nav li button:hover i {
      object-fit: contain;
 }
 
+/* ----- SECTION 2 & 3 ----- */
+
+.ill-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  background-color: #ffe7d2;
+}
+
+.ill-section h3 {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  font-size: 1.45rem;
+  width: 60%;
+  margin: auto;
+}
+
+#illustration_one .container {
+  border-bottom: 1px solid #bdb5af;
+}
+

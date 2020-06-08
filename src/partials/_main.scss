@@ -32,3 +32,22 @@
         }
     }
 }
+
+/* ----- SECTION 2 & 3 ----- */
+
+.ill-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-color: $colore_sfondo;
+    h3 {
+        @include titles_margin(0,0);
+        font-size: $small_titles;
+        width: 60%;
+        margin: auto;
+    }
+}
+
+#illustration_one .container {
+    border-bottom: 1px solid rgb(189, 181, 175);
+}
