@@ -1,0 +1,26 @@
+.container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+ul, li {
+    list-style-type: none;
+    display: inline;
+}
+
+a {
+    color: black;
+    &:hover {
+        text-decoration: none;
+        color: #30488f;
+        i {
+            color: #30488f;
+        }
+    }
+}
+
+button {
+    @include my-radius(8px);
+    padding: 10px;
+    font-weight: bold;
+}

@@ -1,0 +1,27 @@
+nav {
+    @include my-flex(space-between, center);
+    height: 75px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgb(189, 181, 175);
+
+    .logo{
+        @include my-flex(center, center);
+    }
+
+    .menu {
+        line-height: 75px;
+    }
+
+    li {
+        padding: 0 10px;
+        font-size: $font_size_link;
+        font-weight: bold;
+
+        button {
+            &:hover {
+                background-color: $button_bg;
+                color: white;
+            }
+        }
+    }
+}
