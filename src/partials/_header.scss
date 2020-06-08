@@ -17,10 +17,20 @@ nav {
         font-size: $font_size_link;
         font-weight: bold;
 
+        &:last-of-type {
+            padding-right: 0;
+        }
+        
         button {
+            transition: all 0.2s;
+            border-width: 1px;
             &:hover {
                 background-color: $button_bg;
                 color: white;
+
+                i {
+                    color: white;
+                }
             }
         }
     }
