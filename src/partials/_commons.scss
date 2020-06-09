@@ -51,6 +51,10 @@ p.imp {
     @include titles_margin(0,0);
     font-size: $small_titles;
     width: 60%;
-    margin: auto;
     font-weight: 500;
+    line-height: 40px;
+}
+
+i.fas {
+    cursor: pointer;
 }
