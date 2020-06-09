@@ -67,7 +67,7 @@
     }
     .big-ill {
         text-align: center;
-        margin: 100px 0;
+        margin: $section_elements_space;
         img {
             @include img_set( 280px, 286px)
         }
@@ -138,10 +138,8 @@
        .info {
         @include my-flex(flex-end, flex-start);
         &>div {
-            
             padding-left: 500px;
         }
        }
     }
-
 }

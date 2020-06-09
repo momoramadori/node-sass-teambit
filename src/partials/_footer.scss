@@ -1,0 +1,53 @@
+/* ----- FOOTER ----*/
+
+footer {
+    .container {
+        @include my-flex(center,flex-start);
+        flex-wrap: wrap;
+
+        &>div {
+            &.links {
+                @include my-flex (center,flex-start);
+                width: 65%;
+
+                ul {
+                    min-width: 150px;
+                    padding-inline-start: 0;
+
+                    li {
+                        line-height: 30px;
+                        padding: 0 3px;
+
+                        a {
+                            font-size: $font_size_link;
+
+                            &:hover {
+                                color: $button_bg;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.description {
+                @include my-flex (center,center);
+                width: 30%;
+                margin-right: 5%;
+
+                img {
+                    width: 100px;
+                    margin-right: 20px;
+                }
+
+                a {
+                    color: $button_bg;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+            }
+           
+        }
+    }
+}

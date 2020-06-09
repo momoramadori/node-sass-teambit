@@ -394,10 +394,8 @@ body {
   margin: auto;
 }
 
-ul,
 li {
   list-style-type: none;
-  display: inline;
 }
 
 a {
@@ -468,6 +466,11 @@ nav .logo {
 
 nav .menu {
   line-height: 75px;
+}
+
+nav ul,
+nav li {
+  display: inline;
 }
 
 nav li {
@@ -703,5 +706,61 @@ nav li button:hover i {
 #examples #ex-two .info > div,
 #examples #ex-four .info > div {
   padding-left: 500px;
+}
+
+/* ----- FOOTER ----*/
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+footer .container > div.links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 65%;
+}
+
+footer .container > div.links ul {
+  min-width: 150px;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+footer .container > div.links ul li {
+  line-height: 30px;
+  padding: 0 3px;
+}
+
+footer .container > div.links ul li a {
+  font-size: 12px;
+}
+
+footer .container > div.links ul li a:hover {
+  color: #30488f;
+}
+
+footer .container > div.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin-right: 5%;
+}
+
+footer .container > div.description img {
+  width: 100px;
+  margin-right: 20px;
+}
+
+footer .container > div.description a {
+  color: #30488f;
+}
+
+footer .container > div.description a:hover {
+  text-decoration: underline;
 }
 
