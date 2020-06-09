@@ -6448,7 +6448,7 @@ i.fas {
 
 /* ----- HEADER ----- */
 header.scrolled {
-  transition: all 0.3s;
+  transition: all 0.5s;
   background-color: white;
   border-bottom: 1px solid #bdb5af;
   box-shadow: 0px 10px 5px #ccc;
