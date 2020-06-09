@@ -381,10 +381,16 @@ template {
 body {
   font-family: "Raleway", sans-serif;
   color: #58402c;
+  box-sizing: border-box;
 }
 
 .container {
   max-width: 1150px;
+  margin: auto;
+}
+
+.small {
+  max-width: 860px;
   margin: auto;
 }
 
@@ -422,6 +428,17 @@ p.imp {
   font-size: 1.35rem;
   line-height: 30px;
   margin-bottom: 40px;
+}
+
+.ill-section h3 {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  font-size: 26px;
+  width: 60%;
+  margin: auto;
+  font-weight: 500;
 }
 
 /* ----- HEADER ----- */
@@ -481,8 +498,7 @@ nav li button:hover i {
 /* ----- JUMBOTRON ----- */
 
 #jumbotron {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 100px 0;
 }
 
 #jumbotron .container {
@@ -513,31 +529,68 @@ nav li button:hover i {
 
 #jumbotron .container img {
   width: 100%;
+  height: auto;
   -o-object-fit: contain;
      object-fit: contain;
+  object-fit: contain;
 }
 
 /* ----- SECTION 2 & 3 ----- */
 
 .ill-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
   text-align: center;
   background-color: #ffe7d2;
 }
 
 .ill-section h3 {
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
-  font-size: 26px;
-  width: 60%;
-  margin: auto;
-  font-weight: 500;
+  padding: 100px 0;
+}
+
+.ill-section .container h3:last-child {
+  padding-top: 0;
+}
+
+.ill-section .ill-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ill-section .ill-wrapper div {
+  width: calc( 100% / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ill-section .ill-wrapper div img {
+  width: 140px;
+  height: 105px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 200px;
+}
+
+.ill-section .ill-wrapper div p {
+  max-width: 80%;
+}
+
+.ill-section .big-ill {
+  text-align: center;
+  margin: 100px 0;
+}
+
+.ill-section .big-ill img {
+  width: 280px;
+  height: 286px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 #illustration_one .container {
   border-bottom: 1px solid #bdb5af;
 }
+
+/* ----- SECTION 4 TO 7 ----- */
 

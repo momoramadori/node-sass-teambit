@@ -1,8 +1,7 @@
 /* ----- JUMBOTRON ----- */
 
 #jumbotron {
-    margin-top: 100px;
-    margin-bottom: 100px;
+   margin: $section_elements_space;
 
     .container {
         @include my-flex(center,flex-start);
@@ -27,7 +26,7 @@
             }
         }
         img {
-            width: 100%;
+            @include img_set (100%, auto);
             object-fit: contain;
         }
     }
@@ -36,19 +35,48 @@
 /* ----- SECTION 2 & 3 ----- */
 
 .ill-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
     text-align: center;
     background-color: $colore_sfondo;
+
     h3 {
-        @include titles_margin(0,0);
-        font-size: $small_titles;
-        width: 60%;
-        margin: auto;
-        font-weight: 500;
+        padding: $section_elements_space;
+        @extend %h3;
+    }
+
+    .container h3:last-child {
+        padding-top: 0;
+    }
+
+    .ill-wrapper {
+        @include my-flex(center,center);
+
+        div {
+            width: calc( 100% / 3);
+            @include my-flex(center,center);
+            flex-direction: column;
+
+            img {
+                @include img_set( 140px, 105px);
+                max-height: 200px;
+            }
+
+            p {
+                max-width: 80%;
+            }
+        } 
+    }
+    .big-ill {
+        text-align: center;
+        margin: 100px 0;
+        img {
+            @include img_set( 280px, 286px)
+        }
     }
 }
 
-#illustration_one .container {
-    border-bottom: 1px solid rgb(189, 181, 175);
+#illustration_one .container{
+    border-bottom: $bottom_border;
 }
+
+/* ----- SECTION 4 TO 7 ----- */
+

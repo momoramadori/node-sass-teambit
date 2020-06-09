@@ -12,3 +12,9 @@
     margin-block-start: $start;
     margin-block-end: $end;
 }
+
+@mixin img_set($width, $height) {
+    width: $width;
+    height: $height;
+    object-fit: contain;
+}

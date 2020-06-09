@@ -1,10 +1,16 @@
 body {
     font-family: 'Raleway', sans-serif;
     color: $colore_testo;
+    box-sizing: border-box;
 }
 
 .container {
     max-width: 1150px;
+    margin: auto;
+}
+
+.small {
+    max-width: 860px;
     margin: auto;
 }
 
@@ -39,4 +45,12 @@ p.imp {
     font-size: $important_paragraphs;
     line-height: 30px;
     margin-bottom: $standard_margin;
+}
+
+%h3 {
+    @include titles_margin(0,0);
+    font-size: $small_titles;
+    width: 60%;
+    margin: auto;
+    font-weight: 500;
 }
