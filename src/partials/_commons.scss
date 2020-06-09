@@ -34,6 +34,7 @@ button {
     margin-bottom: $button_margin;
     border-width: $border_width_button;
     background-color: $button_bg;
+    cursor: pointer;
 
     a, i {
         color: $button_color;
