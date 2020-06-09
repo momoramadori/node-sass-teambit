@@ -1,0 +1,10 @@
+.fixed-popup {
+    padding: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: $button_bg;
+    @include my-radius(50%);
+    font-size: 35px;
+    color: white;
+}

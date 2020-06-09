@@ -1,50 +1,56 @@
 /* ----- HEADER ----- */
+ header {
+     position:fixed;
+     top: 0;
+     width: 100%;
+     background-color: white;
 
-nav {
-    @include my-flex(space-between, center);
-    height: 75px;
-    margin-bottom: 40px;
-    border-bottom: $bottom_border;
-
-    .logo{
-        @include my-flex(center, center);
-    }
-
-    .menu {
-        line-height: 75px;
-    }
-
-    ul, li {
-        display: inline;
-    }
-
-    li {
-        padding: 15px 25px;
-        font-size: $font_size_link;
-        font-weight: bold;
-        
-        a:hover {
-            color: $colore_testo;
+     nav {
+        @include my-flex(space-between, center);
+        height: 75px;
+        margin-bottom: 40px;
+        border-bottom: $bottom_border;
+    
+        .logo{
+            @include my-flex(center, center);
         }
-        
-        &:last-of-type {
-            padding-right: 0;
+    
+        .menu {
+            line-height: 75px;
         }
-        
-        button {
-            transition: background-color 0.2s;
-            background-color: white;
-            color: $colore_testo;
-            i {
+    
+        ul, li {
+            display: inline;
+        }
+    
+        li {
+            padding: 15px 25px;
+            font-size: $font_size_link;
+            font-weight: bold;
+            
+            a:hover {
                 color: $colore_testo;
             }
-            &:hover {
-                background-color: $button_bg;
-                color: $button_color;
+            
+            &:last-of-type {
+                padding-right: 0;
+            }
+            
+            button {
+                transition: background-color 0.2s;
+                background-color: white;
+                color: $colore_testo;
                 i {
+                    color: $colore_testo;
+                }
+                &:hover {
+                    background-color: $button_bg;
                     color: $button_color;
+                    i {
+                        color: $button_color;
+                    }
                 }
             }
         }
     }
-}
+ }

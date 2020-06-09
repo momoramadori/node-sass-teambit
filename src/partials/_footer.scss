@@ -1,6 +1,7 @@
 /* ----- FOOTER ----*/
 
 footer {
+    margin: $section_elements_space;
     .container {
         @include my-flex(center,flex-start);
         flex-wrap: wrap;
