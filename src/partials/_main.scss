@@ -26,7 +26,6 @@
         }
         img {
             @include img_set (100%, auto);
-            object-fit: contain;
         }
     }
 }
@@ -83,7 +82,7 @@
 #examples {
 
     #ex-one, #ex-three {
-        padding: $section_elements_space;
+        margin: $section_elements_space;
         @include my-flex (center,center);
 
         h3 {
@@ -155,6 +154,7 @@
         text-align: center;
     }
     .box {
+        position: relative;
         margin: auto;
         min-width: 500px;
         width: 60%;
@@ -162,6 +162,18 @@
         @include my-radius(8px);  
         border: 1px solid $button_bg;
         padding: 25px;
+    }
+
+    .box::after {
+        content:'';
+        display: block;
+        width: 37px;
+        height: 39px;
+        position: absolute;
+        top: -23px;
+        left: -1px;
+        background: url(https://teambit.io/wp-content/themes/teambeat/img/landing/quote.svg) center center no-repeat;
+        z-index: 1;
     }
 
     .sign {
